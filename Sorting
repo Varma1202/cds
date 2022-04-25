@@ -1,0 +1,42 @@
+package InputPrograms;
+
+import java.util.Scanner;
+
+class SortAscNumber {
+    SortAscNumber(){
+    }
+
+    String numberComparator(final int first , final int sec , final int thrd , final int forth)
+    {
+        int low=0;
+        int high=0;
+        if(first < sec && first < thrd && first < forth){
+
+        return low+","+sec,+high;
+    }
+
+    void getNumbers()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter The Numbers:");
+        int firstNum = scanner.nextInt();
+
+        //System.out.println("Enter Second Number");
+        int secondNum = scanner.nextInt();
+        //System.out.println("Enter Third Number");
+        int thirdNum = scanner.nextInt();
+        // System.out.println("Enter Forth Number");
+        int forthNum = scanner.nextInt();
+
+        numberComparator(firstNum ,secondNum ,thirdNum ,forthNum);
+
+
+    }
+
+    public static void main(String...args) {
+        SortAscNumber inputProgramTest = new SortAscNumber();
+        inputProgramTest.getNumbers();
+
+    }
+
+}
